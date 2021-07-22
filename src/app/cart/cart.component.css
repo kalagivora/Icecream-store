@@ -1,0 +1,52 @@
+.cart-container .list-group {
+  border-radius: 2px;
+  border-color: grey;
+  /* border-width: 2px; */
+  border-style: groove;
+  padding: 5px;
+  width: 60%;
+  font-family: cursive;
+}
+
+.no-item {
+  font-family: cursive;
+  font-size: large;
+  text-align: center;
+}
+
+.no-item a {
+  text-decoration: none;
+  color: gray;
+}
+
+.cart-container {
+  width: 50%;
+  font-family: cursive;
+  border-radius: 5px;
+  border-style: groove;
+  border-width: 2px;
+  padding: 8px;
+  border-color: gray;
+  background-color: rgb(222, 238, 222);
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: inherit;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.red-color {
+  color: rgb(196, 0, 0);
+}

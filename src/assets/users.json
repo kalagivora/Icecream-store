@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "fname": "Karn",
+    "lname": "Yong",
+    "username": "karn.yong@mecallapi.com",
+    "role": "user",
+    "password": "1234"
+  },
+  {
+    "id": 2,
+    "fname": "Ivy",
+    "lname": "Cal",
+    "username": "ivy.cal@mecallapi.com",
+    "role": "user",
+    "password": "1234"
+  },
+  {
+    "id": 3,
+    "fname": "Walter",
+    "lname": "Beau",
+    "username": "walter.beau@mecallapi.com",
+    "role": "user",
+    "password": "1234"
+  },
+  {
+    "id": 4,
+    "fname": "Gayla",
+    "lname": "Bertrand",
+    "username": "gayla.bertrand@mecallapi.com",
+    "role": "user",
+    "password": "1234"
+  }
+]

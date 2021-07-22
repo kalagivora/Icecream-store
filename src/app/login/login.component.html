@@ -1,0 +1,102 @@
+<div id="main" class="main-container">
+  <div class="box">
+    <h2>Login</h2>
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+      <div class="input-box">
+        <input
+          id="user-name"
+          type="text"
+          ngModel
+          name="username"
+          required
+          email
+        />
+        <label>Username</label>
+      </div>
+      <div class="input-box">
+        <input
+          id="user-pass"
+          type="password"
+          ngModel
+          name="password"
+          required
+          minlength="6"
+        />
+        <label>Password</label>
+      </div>
+      <div class="text-center m-2">
+        <button class="btn btn-sm btn-outline-primary" type="submit">
+          Login
+        </button>
+      </div>
+    </form>
+    <div class="text-center" *ngIf="userRoleFlag == 'user'">
+      OR
+      <div class="m-2">
+        <button
+          type="button"
+          (click)="loginWithGoogle()"
+          class="btn btn-sm btn-outline-danger"
+        >
+          Login with Google
+        </button>
+      </div>
+    </div>
+    <p class="text-center" *ngIf="userRoleFlag == 'user'">
+      <a (click)="changeRoleFlag()">Login as Admin</a>
+    </p>
+    <p class="text-center" *ngIf="userRoleFlag == 'admin'">
+      <a (click)="changeRoleFlag()">Login as User</a>
+    </p>
+  </div>
+</div>
+
+<!-- <div id="logged-in"></div> -->
+<!-- <div class="container" style="max-width: 550px">
+  <h2 class="text-center mb-5">Angular Login with Google</h2>
+
+  <div *ngIf="isLoggedin === false">
+    <div>
+      <button type="button" (click)="loginWithGoogle()" class="btn btn-danger">
+        Login with Google
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="isLoggedin === true">
+    <div class="form-group">
+      <label>First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        [value]="socialUser.firstName"
+        id="firstname"
+        readonly
+      />
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        [value]="socialUser.lastName"
+        id="lastname"
+        readonly
+      />
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input
+        type="text"
+        class="form-control"
+        [value]="socialUser.email"
+        id="email"
+        readonly
+      />
+    </div>
+
+    <button type="button" (click)="logOut()" class="btn btn-primary">
+      Log Out
+    </button>
+  </div>
+</div> -->

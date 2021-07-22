@@ -1,0 +1,62 @@
+<div class="main-container">
+  <div class="featured">
+    <h2>Ice Cream Store</h2>
+    <p>Pick Up your Favourite</p>
+  </div>
+  <div class="search-main mt-3">
+    <form class="searchButton" style="margin: auto; max-width: 300px">
+      <input
+        #searchBox
+        type="text"
+        placeholder="Search"
+        name="search"
+        [(ngModel)]="searchedKeyword"
+      />
+    </form>
+  </div>
+  <div class="product">
+    <div
+      class="card m-3"
+      style="width: 400px"
+      *ngFor="let product of products | filter: searchedKeyword"
+    >
+      <img class="card-img-top" [src]="product.imagePath" alt="Card image" />
+      <div class="card-body" style="display: flex; flex-direction: column">
+        <span style="float: left">
+          <h4 class="card-title">
+            {{ product.productName }}
+          </h4>
+        </span>
+        <br />
+        <span style="float: left">
+          <span style="display: inline">
+            Quantity:
+            <input
+              type="number"
+              id="quantity"
+              style="
+                width: 60px;
+                padding: 5px;
+                margin-bottom: 3px;
+                border: none;
+              "
+              [value]="product.quantity"
+              name="quantity"
+              min="1"
+              required
+              pattern="^[1-9]+[0-9]*$"
+              #quantity
+            />
+          </span>
+          <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+          <span style="display: inline">
+            <small>{{ product.price }}₹</small>
+          </span>
+        </span>
+        <a (click)="onAddCart(product, quantity.value)" class="btn btn-primary"
+          >Add to Cart</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

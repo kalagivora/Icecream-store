@@ -1,0 +1,49 @@
+<div class="m-3 no-item" *ngIf="cartItems.length == 0">
+  <p>No items in the Cart</p>
+  <a routerLink="/home">+Add Items</a>
+</div>
+<div style="display: flex; justify-content: center">
+  <div class="cart-container m-3" *ngIf="cartItems.length > 0" id="invoice">
+    <h5 class="mb-3" style="color: rgb(37, 4, 61)"><i>Cart Summary</i></h5>
+    <div *ngFor="let item of cartItems; let i = index" class="m-3">
+      <p>Flavor:</p>
+      <input
+        class="no-outline"
+        style="width: 50%; padding: 5px"
+        type="text"
+        [value]="item.name"
+        disabled
+        #items
+      /><i class="fa fa-times"></i>{{ item.quantity }}
+
+      <!-- <button class="btn btn-sm btn-outline-danger" (click)="onDelete(item)">
+        Delete
+      </button> -->
+      <a style="float: right" (click)="onDelete(item)"
+        ><i class="fa fa-trash fa-1x red-color"></i
+      ></a>
+    </div>
+    <p class="m-3">Total: {{ totalPrice() }}</p>
+
+    <button class="btn btn-outline-secondary m-3">Checkout</button>
+    <!-- <ul class="list-group">
+    <a
+      class="list-group-item"
+      style="cursor: pointer"
+      *ngFor="let item of cartItems; let i = index"
+    >
+      {{ item.name }} | {{ item.price }}₹
+    </a>
+  </ul> -->
+  </div>
+</div>
+<!-- <div class="m-3" *ngIf="cartItems.length > 0">
+  <button class="btn btn-success btn-block" (click)="openPDF()">
+    Download Invoice
+  </button>
+</div> -->
+<div class="m-3" *ngIf="cartItems.length > 0">
+  <button class="btn btn-success btn-block" (click)="generatePDF()">
+    Download Invoice
+  </button>
+</div>

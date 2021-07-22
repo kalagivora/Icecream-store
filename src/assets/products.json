@@ -1,0 +1,58 @@
+[
+  {
+    "productId": 1,
+    "productName": "Chocolate Ice Cream",
+    "price": 100,
+    "imagePath": "https://th.bing.com/th/id/Rfd616ab4c7d61cb5a6700891dbca97d6?rik=EJ8ykcKp3U%2bdRg&riu=http%3a%2f%2fwallpapersdsc.net%2fwp-content%2fuploads%2f2015%2f11%2fIce_Cream_4K5.jpg&ehk=WGNzekODCd0VZPiMhcZNJB%2bu%2b7ZVQqwZL%2bVipKfiIPs%3d&risl=&pid=ImgRaw",
+    "quantity": 1
+  },
+  {
+    "productId": 2,
+    "productName": "Blueberry Ice Cream",
+    "price": 120,
+    "imagePath": "https://th.bing.com/th/id/R42394edbda4391123a3bcc18d5cfaa18?rik=L8JSMdQSaRhS6A&riu=http%3a%2f%2fwww.recipesforthermomix.com%2frecipes-images%2fblueberry-ice-cream-thermomix.jpg&ehk=Bcn0nSG3dX7A3re6uAdmGz9g2Nk0YQI4oI6lfeWWLAM%3d&risl=&pid=ImgRaw",
+    "quantity": 1
+  },
+  {
+    "productId": 3,
+    "productName": "Rainbow Ice Cream",
+    "price": 150,
+    "imagePath": "https://th.bing.com/th/id/OIP.GTXeH5fWidGL_w4HL0ViwwHaLH?pid=ImgDet&rs=1",
+    "quantity": 1
+  },
+  {
+    "productId": 4,
+    "productName": "Hazelnut Ice Cream",
+    "price": 160,
+    "imagePath": "https://kosherrecipes.com/wp-content/uploads/2016/08/Hazelnut-Ice-Cream.jpg",
+    "quantity": 1
+  },
+  {
+    "productId": 5,
+    "productName": "Pineapple Ice Cream",
+    "price": 110,
+    "imagePath": "https://th.bing.com/th/id/R04e081286ccacf75afbf84e8dcec7397?rik=1S38jPkj0Vwpzg&riu=http%3a%2f%2fwww.aycofarms.com%2fwp-content%2fuploads%2f2018%2f04%2fPineapple-Icecream-01-01.jpg&ehk=J4KVCIH0zbI0b7Sn11pGt%2bXcZJtxWWYqx%2bCd5QnQZYs%3d&risl=1&pid=ImgRaw",
+    "quantity": 1
+  },
+  {
+    "productId": 6,
+    "productName": "Coffee Ice Cream",
+    "price": 120,
+    "imagePath": "https://freshaprilflours.com/wp-content/uploads/2016/07/coffee-ice-cream-2.jpg",
+    "quantity": 1
+  },
+  {
+    "productId": 7,
+    "productName": "Cherry Ice Cream",
+    "price": 140,
+    "imagePath": "https://th.bing.com/th/id/OIP.188lxAZMIJLo8l9NWDnfbQHaHa?pid=ImgDet&w=728&h=728&rs=1",
+    "quantity": 1
+  },
+  {
+    "productId": 8,
+    "productName": "Nutella Ice Cream",
+    "price": 160,
+    "imagePath": "https://i2.wp.com/www.thesassylife.com/wp-content/uploads/2014/05/nutella-ice-cream-square.jpg?resize=1000%2C1000",
+    "quantity": 1
+  }
+]
