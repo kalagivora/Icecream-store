@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SocialAuthService } from 'angularx-social-login';
 import { Subscription } from 'rxjs';
-import { AuthService } from 'src/app/services/auth.service';
+import { AuthService } from '../../services/auth.service';
 // import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -21,7 +21,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     console.log(this.role);
     this.userSub = this.authService.userSubject.subscribe((user) => {
-
       if (user != null) {
         this.role = user.role;
         this.auth = !!user;
